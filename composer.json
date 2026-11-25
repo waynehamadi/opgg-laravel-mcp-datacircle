@@ -1,0 +1,57 @@
+{
+  "name": "datacircle/opgg-laravel-mcp-tools",
+  "description": "Find the best GTM APIs. Four tools for OP.GG's Laravel MCP Server call Datacircle's public API. You need no API key.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://datacircle.dev",
+  "keywords": [
+    "laravel",
+    "laravel-mcp-server",
+    "opgg",
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "tools",
+    "api",
+    "gtm",
+    "datacircle"
+  ],
+  "authors": [
+    {
+      "name": "Wayne Hamadi",
+      "email": "wayne@datacircle.dev",
+      "homepage": "https://datacircle.dev"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/waynehamadi/opgg-laravel-mcp-datacircle/issues",
+    "source": "https://github.com/waynehamadi/opgg-laravel-mcp-datacircle",
+    "docs": "https://datacircle.dev/api"
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "opgginc/laravel-mcp-server": "^2.0",
+    "illuminate/http": "^12.0|^13.0",
+    "illuminate/support": "^12.0|^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.0|^11.0",
+    "phpunit/phpunit": "^11.5|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datacircle\\OpggMcp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Datacircle\\OpggMcp\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
